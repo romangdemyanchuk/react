@@ -1,0 +1,53 @@
+.product-scope {
+    padding-top: 100px;
+    color: #000;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.text {
+    margin-bottom: 80px;
+    line-height: 2;
+}
+.strip {
+    display: block;
+    width: 80px;
+    height: 5px;
+    background-color: #7fc992;
+}
+.li-text {
+    line-height: 2;
+    margin-bottom: 80px;
+    margin-left: -18px;
+}
+
+@media screen and (max-width: 1900px) {
+    .text, p, .li-text {
+        font-size: 23px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .product-scope {
+        padding-top: 55px;
+    }
+    .text {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-scope {
+        padding-top: 35px;
+    }
+    .text {
+        margin-bottom: 30px;
+    }
+    .strip {
+        margin-bottom: 12px;
+    }
+
+}
