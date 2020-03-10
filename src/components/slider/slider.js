@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import Slide from "../slider/slide";
 import './slider.css';
 // import "~slick-carousel/slick/slick.css";
 // import "~slick-carousel/slick/slick-theme.css";
@@ -44,22 +45,25 @@ export default class SimpleSlider extends Component {
                 },
             ]
         };
+
+        const images = [
+            {src: sl1, alt: 'alt1'},
+            {src: sl2, alt: 'alt2'},
+            {src: sl3, alt: 'alt3'}
+        ]
+
+        const slides = images.map((item) => {
+            return <Slide itemSrc={item.src} alt={item.alt}/>
+        });
+
         return (
             <section className="slider">
-            <div className="reviews-slider">
-                <Slider {...settings}>
-                    <div className="reviews-slider-item">
-                        <img src={sl1} alt="logo" />
-                    </div>
-                    <div className="reviews-slider-item">
-                        <img src={sl2} alt="logo" />
-                    </div>
-                    <div className="reviews-slider-item">
-                        <img src={sl3} alt="logo" />
-                    </div>
-                </Slider>
-            </div>
+                <div className="reviews-slider">
+                        <Slider {...settings}>
+                        {slides}
+                    </Slider>
+                </div>
             </section>
-        );
+        )
     }
 }

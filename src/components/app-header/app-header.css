@@ -30,6 +30,10 @@
     text-transform: uppercase;
     color: #c6e6cf;
 }
+.header-menu li:hover{
+    color: #fff;
+    cursor: pointer;
+}
 .header-text {
     width: 100%;
 }
@@ -61,11 +65,10 @@
 }
 .header-title {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     font-size: 75px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 20px;
 }
 .header-subtitle {
     text-align: center;
@@ -109,6 +112,7 @@
     }
     .header-menu li:hover{
         color: #fff !important;
+        cursor: pointer;
     }
     .work,
     .contact {
@@ -130,6 +134,9 @@
         height: 20px;
         position: relative;
         bottom: 2px;
+    }
+    .menu-btn:hover {
+        cursor: pointer;
     }
     .menu-btn span{
         width: 100%;

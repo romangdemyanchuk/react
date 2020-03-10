@@ -1,5 +1,6 @@
 import React from 'react';
 import './product-scope.css';
+import Strip from "../strip";
 
 const ProductScope = () =>{
     return (
@@ -8,7 +9,7 @@ const ProductScope = () =>{
                 <div className="row">
                     <div className="col">
                         <div className="title">Product</div>
-                        <div className="strip"/>
+                        <Strip/>
                         <p className="text">
                             LinguaLive foster students' practical application of language skills acquired in the
                             classroom by providing a platform for learners to engage in structered conversations with
@@ -19,7 +20,7 @@ const ProductScope = () =>{
                         <div className="title">
                             THE SCOPE
                         </div>
-                        <div className="strip"/>
+                        <Strip/>
                         <ul className="li-text">
                             <li>Create web responsive platform for students to practise speaking the language they are
                                 learning with native speakers.
