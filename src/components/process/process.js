@@ -1,5 +1,6 @@
 import React from 'react';
 import './process.css';
+import Strip from "../strip";
 
 const AppHeader = () =>{
     return (
@@ -8,7 +9,7 @@ const AppHeader = () =>{
                 <div className="row">
                     <div className="col">
                         <div className="title">Design Process</div>
-                        <div className="strip"/>
+                        <Strip />
                         <div>
                             <div className="process-subtitle">Research
                             </div>
