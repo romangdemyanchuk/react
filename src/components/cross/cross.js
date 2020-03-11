@@ -13,16 +13,16 @@ export default class Cross extends Component {
             {src: img1, alt: 'img1'},
             {src: img2, alt: 'img2'},
             {src: img5, alt: 'img3'},
-        ]
+        ];
         const ImgFooter1 = images1.map((item) => {
             return <ImageFooter1 itemSrc={item.src} alt={item.alt}/>
         });
         const images2 = [
             {src: img6, alt: 'img4'},
             {src: img1, alt: 'img5'},
-            // {src: img2, alt: 'img6'},
-            // {src: img1, alt: 'img7'}
-        ]
+            {src: img2, alt: 'img6'},
+            {src: img1, alt: 'img7'}
+        ];
         const ImgFooter2 = images2.map((item) => {
             return <ImageFooter2 itemSrc={item.src} alt={item.alt}/>
         });
@@ -45,9 +45,7 @@ export default class Cross extends Component {
                         {ImgFooter1}
                     </div>
                     <div className="image-footer-2">
-                        <img className="img-first" src={img5} alt="logo" />
                         {ImgFooter2}
-                        <img className="img-last" src={img2} alt="logo" />
                     </div>
                 </div>
             </section>

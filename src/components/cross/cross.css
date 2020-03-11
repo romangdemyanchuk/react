@@ -27,10 +27,10 @@
     padding: 0 10px;
     margin-left: 1.3%;
 }
-.img-first {
+.image-footer-2 img:first-child {
     margin-left: -18% !important;
 }
-.img-last {
+.image-footer-2 img:last-child {
     margin-left: 0.9% !important;
 }
 

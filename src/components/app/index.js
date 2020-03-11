@@ -1,3 +1,3 @@
-import Appq from './app';
+import App from './app';
 
-export default Appq;
+export default App;
